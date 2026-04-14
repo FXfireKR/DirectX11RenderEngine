@@ -39,3 +39,14 @@
 
 # debug information files
 *.dwo
+
+
+*.tlog
+*.ini
+x64/
+Libraries/
+Resource/
+.vs/
+bin/
+obj/
+Properties/

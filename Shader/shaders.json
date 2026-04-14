@@ -1,0 +1,186 @@
+{
+
+  "Error": {
+    "VS": {
+      "path": "error.hlsl",
+      "entry": "VS",
+      "version": "vs_5_0"
+    },
+
+    "PS": {
+      "path": "error.hlsl",
+      "entry": "PS",
+      "version": "ps_5_0"
+    }
+  },
+
+  "ColorForward": {
+    "VS": {
+      "path": "Color.hlsl",
+      "entry": "VS",
+      "version": "vs_5_0"
+    },
+
+    "PS": {
+      "path": "Color.hlsl",
+      "entry": "PS",
+      "version": "ps_5_0"
+    }
+  },
+
+  "ImageForward": {
+    "VS": {
+      "path": "Image.hlsl",
+      "entry": "VS",
+      "version": "vs_5_0"
+    },
+
+    "PS": {
+      "path": "Image.hlsl",
+      "entry": "PS",
+      "version": "ps_5_0"
+    }
+  },
+
+  "NormalImageForward": {
+      "VS": {
+        "path": "normalImage.hlsl",
+        "entry": "VS",
+        "version": "vs_5_0"
+      },
+
+      "PS": {
+        "path": "normalImage.hlsl",
+        "entry": "PS",
+        "version": "ps_5_0"
+      }
+  },
+
+  "NormalImageCutout": {
+      "VS": {
+        "path": "normalImageCutout.hlsl",
+        "entry": "VS",
+        "version": "vs_5_0"
+      },
+
+      "PS": {
+        "path": "normalImageCutout.hlsl",
+        "entry": "PS",
+        "version": "ps_5_0"
+      }
+  },
+
+  "Highlight": {
+      "VS": {
+        "path": "highlight.hlsl",
+        "entry": "VS",
+        "version": "vs_5_0"
+      },
+
+      "PS": {
+        "path": "highlight.hlsl",
+        "entry": "PS",
+        "version": "ps_5_0"
+      }
+  },
+
+  "Billboard": {
+      "VS": {
+        "path": "Billboard.hlsl",
+        "entry": "VS",
+        "version": "vs_5_0"
+      },
+
+      "PS": {
+        "path": "Billboard.hlsl",
+        "entry": "PS",
+        "version": "ps_5_0"
+      }
+  },
+
+  "SkyBillboard": {
+      "VS": {
+        "path": "SkyBillboard.hlsl",
+        "entry": "VS",
+        "version": "vs_5_0"
+      },
+
+      "PS": {
+        "path": "SkyBillboard.hlsl",
+        "entry": "PS",
+        "version": "ps_5_0"
+      }
+  },
+
+  "BlockParticleBillboard": {
+      "VS": {
+        "path": "BlockParticleBillboard.hlsl",
+        "entry": "VS",
+        "version": "vs_5_0"
+      },
+
+      "PS": {
+        "path": "BlockParticleBillboard.hlsl",
+        "entry": "PS",
+        "version": "ps_5_0"
+      }
+  },
+
+  "SkyCloud": {
+      "VS": {
+        "path": "SkyCloud.hlsl",
+        "entry": "VS",
+        "version": "vs_5_0"
+      },
+
+      "PS": {
+        "path": "SkyCloud.hlsl",
+        "entry": "PS",
+        "version": "ps_5_0"
+      }
+  },
+
+  "SkyStar": {
+      "VS": {
+        "path": "SkyStar.hlsl",
+        "entry": "VS",
+        "version": "vs_5_0"
+      },
+
+      "PS": {
+        "path": "SkyStar.hlsl",
+        "entry": "PS",
+        "version": "ps_5_0"
+      }
+  },
+
+  "UIInvertMask": {
+      "VS": {
+        "path": "UIInvertMask.hlsl",
+        "entry": "VS",
+        "version": "vs_5_0"
+      },
+
+      "PS": {
+        "path": "UIInvertMask.hlsl",
+        "entry": "PS",
+        "version": "ps_5_0"
+      }
+  },
+
+  "ShadowDepth": {
+      "VS": {
+        "path": "ShadowDepth.hlsl",
+        "entry": "VS",
+        "version": "vs_5_0"
+      },
+
+      "PS": {
+        "path": "ShadowDepth.hlsl",
+        "entry": "PS",
+        "version": "ps_5_0"
+      }
+  }
+    
+
+}

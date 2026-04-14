@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{c80e2a53-054b-4e27-96e5-cc089e0bf4aa}</ProjectGuid>
+    <RootNamespace>DX11Tutorial</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(IncludePath);$(DXSDK_DIR)Include</IncludePath>
+    <LibraryPath>$(LibraryPath);$(DXSDK_DIR)Lib\x64</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(IncludePath);$(DXSDK_DIR)Include</IncludePath>
+    <LibraryPath>$(LibraryPath);$(DXSDK_DIR)Lib\x64</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>ImGui;ImGui/backend;$(SolutionDir)Libraries/inc/</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Libraries/Lib/</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)Libraries/inc/;ImGui;ImGui/backend;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OmitFramePointers>true</OmitFramePointers>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Libraries/Lib/</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AtlasTypes.h" />
+    <ClInclude Include="AudioType.h" />
+    <ClInclude Include="BlockDefTypes.h" />
+    <ClInclude Include="BlockMiningTypes.h" />
+    <ClInclude Include="BlockRaycastTypes.h" />
+    <ClInclude Include="BlockRaycastUtil.h" />
+    <ClInclude Include="BlockStateParseUtil.h" />
+    <ClInclude Include="BlockStateTypes.h" />
+    <ClInclude Include="BlockTagTypes.h" />
+    <ClInclude Include="CApplication.h" />
+    <ClInclude Include="CAudioSystem.h" />
+    <ClInclude Include="CBgmController.h" />
+    <ClInclude Include="CBlockBreakParticleSystem.h" />
+    <ClInclude Include="CBlockCrackRenderer.h" />
+    <ClInclude Include="CBlockDB.h" />
+    <ClInclude Include="CBlockDefDB.h" />
+    <ClInclude Include="CBlockInteractor.h" />
+    <ClInclude Include="CBlockResourceDB.h" />
+    <ClInclude Include="CBlockStateDB.h" />
+    <ClInclude Include="CBlockTagDB.h" />
+    <ClInclude Include="CBootScene.h" />
+    <ClInclude Include="CCamera.h" />
+    <ClInclude Include="CCharacterMotor.h" />
+    <ClInclude Include="CChunkColumn.h" />
+    <ClInclude Include="CChunkComponent.h" />
+    <ClInclude Include="CChunkMeshBuilder.h" />
+    <ClInclude Include="CChunkMesherSystem.h" />
+    <ClInclude Include="CChunkSection.h" />
+    <ClInclude Include="CChunkWorld.h" />
+    <ClInclude Include="CCloudLayerRenderer.h" />
+    <ClInclude Include="CComponent.h" />
+    <ClInclude Include="CComponentBase.h" />
+    <ClInclude Include="CDebugCollector.h" />
+    <ClInclude Include="CDebugOverlay.h" />
+    <ClInclude Include="CDeltaTimeManager.h" />
+    <ClInclude Include="CDualSenseDevice.h" />
+    <ClInclude Include="CFlatChunkGenerator.h" />
+    <ClInclude Include="CFrustumCuller.h" />
+    <ClInclude Include="CGamePadHub.h" />
+    <ClInclude Include="CGameScene.h" />
+    <ClInclude Include="CGameWorld.h" />
+    <ClInclude Include="CHeightmapChunkGenerator.h" />
+    <ClInclude Include="ChunkMath.h" />
+    <ClInclude Include="ChunkRenderTypes.h" />
+    <ClInclude Include="ChunkTypes.h" />
+    <ClInclude Include="CInitializeScene.h" />
+    <ClInclude Include="CInputLayer.h" />
+    <ClInclude Include="CInputLayerManager.h" />
+    <ClInclude Include="CInputManager.h" />
+    <ClInclude Include="CInventoryComponent.h" />
+    <ClInclude Include="CKeyboardDevice.h" />
+    <ClInclude Include="CMaterial.h" />
+    <ClInclude Include="CMaterialManager.h" />
+    <ClInclude Include="CMesh.h" />
+    <ClInclude Include="CMeshManager.h" />
+    <ClInclude Include="CMeshRenderer.h" />
+    <ClInclude Include="CModelDB.h" />
+    <ClInclude Include="CMouseDevice.h" />
+    <ClInclude Include="CObject.h" />
+    <ClInclude Include="CObjectManager.h" />
+    <ClInclude Include="Components.h" />
+    <ClInclude Include="CoreTypes.h" />
+    <ClInclude Include="CPipeline.h" />
+    <ClInclude Include="CPipelineManager.h" />
+    <ClInclude Include="CPlayerController.h" />
+    <ClInclude Include="CRapidJsonParseWrapper.h" />
+    <ClInclude Include="CRawInputDispatcher.h" />
+    <ClInclude Include="CRenderFrame.h" />
+    <ClInclude Include="CRenderManager.h" />
+    <ClInclude Include="CRenderWorld.h" />
+    <ClInclude Include="CRuntimeAtlas.h" />
+    <ClInclude Include="CRuntimeAtlasBuilder.h" />
+    <ClInclude Include="CSamplerManager.h" />
+    <ClInclude Include="CSamplerState.h" />
+    <ClInclude Include="CScene.h" />
+    <ClInclude Include="CSceneManager.h" />
+    <ClInclude Include="CShader.h" />
+    <ClInclude Include="CShaderManager.h" />
+    <ClInclude Include="CSoundDataBase.h" />
+    <ClInclude Include="CTestScene.h" />
+    <ClInclude Include="CTexture.h" />
+    <ClInclude Include="CTextureManager.h" />
+    <ClInclude Include="CTransform.h" />
+    <ClInclude Include="CDirectX11Adapter.h" />
+    <ClInclude Include="CWindow.h" />
+    <ClInclude Include="CWorld.h" />
+    <ClInclude Include="CWorldLight.h" />
+    <ClInclude Include="CWorldTime.h" />
+    <ClInclude Include="DebugTypes.h" />
+    <ClInclude Include="DebugUtil.h" />
+    <ClInclude Include="DirectX11Com.h" />
+    <ClInclude Include="DX11Tutorial.h" />
+    <ClInclude Include="EncodingUtil.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="GameWorldHeader.h" />
+    <ClInclude Include="HashUtil.h" />
+    <ClInclude Include="IBlockAccessor.hpp" />
+    <ClInclude Include="IFileWrapper.h" />
+    <ClInclude Include="IGamePadDevice.h" />
+    <ClInclude Include="IInputDevice.h" />
+    <ClInclude Include="ILoadProgress.h" />
+    <ClInclude Include="ImGui\backend\imgui_impl_dx11.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="ImGui\backend\imgui_impl_win32.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="ImGui\imconfig.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_internal.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_rectpack.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_textedit.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_truetype.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="MathUtil.h" />
+    <ClInclude Include="MinecraftCore.h" />
+    <ClInclude Include="ModelTypes.h" />
+    <ClInclude Include="ModelUtil.h" />
+    <ClInclude Include="ObjectTypes.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="RenderTypes.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="CSystem.h" />
+    <ClInclude Include="ResourceUtil.h" />
+    <ClInclude Include="SceneHeader.h" />
+    <ClCompile Include="BlockStateTypes.cpp" />
+    <ClCompile Include="CAudioSystem.cpp" />
+    <ClCompile Include="CBgmController.cpp" />
+    <ClCompile Include="CBlockBreakParticleSystem.cpp" />
+    <ClCompile Include="CBlockCrackRenderer.cpp" />
+    <ClCompile Include="CBlockDB.cpp" />
+    <ClCompile Include="CBlockDefDB.cpp" />
+    <ClCompile Include="CBlockInteractor.cpp" />
+    <ClCompile Include="CBlockResourceDB.cpp" />
+    <ClCompile Include="CBlockStateDB.cpp" />
+    <ClCompile Include="CBlockTagDB.cpp" />
+    <ClCompile Include="CCharacterMotor.cpp" />
+    <ClCompile Include="CChunkColumn.cpp" />
+    <ClCompile Include="CChunkComponent.cpp" />
+    <ClCompile Include="CChunkMeshBuilder.cpp" />
+    <ClCompile Include="CChunkMesherSystem.cpp" />
+    <ClCompile Include="CChunkSection.cpp" />
+    <ClCompile Include="CChunkWorld.cpp" />
+    <ClCompile Include="CCloudLayerRenderer.cpp" />
+    <ClCompile Include="CDebugCollector.cpp" />
+    <ClCompile Include="CDebugOverlay.cpp" />
+    <ClCompile Include="CDualSenseDevice.cpp" />
+    <ClCompile Include="CFlatChunkGenerator.cpp" />
+    <ClCompile Include="CFrustumCuller.cpp" />
+    <ClCompile Include="CGamePadHub.cpp" />
+    <ClCompile Include="CGameScene.cpp" />
+    <ClCompile Include="CHeightmapChunkGenerator.cpp" />
+    <ClCompile Include="CInitializeScene.cpp" />
+    <ClCompile Include="CInputManager.cpp" />
+    <ClCompile Include="CInventoryComponent.cpp" />
+    <ClCompile Include="CKeyboardDevice.cpp" />
+    <ClCompile Include="CMaterialManager.cpp" />
+    <ClCompile Include="CModelDB.cpp" />
+    <ClCompile Include="CMouseDevice.cpp" />
+    <ClCompile Include="CPlayerController.cpp" />
+    <ClCompile Include="CRawInputDispatcher.cpp" />
+    <ClCompile Include="CRuntimeAtlas.cpp" />
+    <ClCompile Include="CRuntimeAtlasBuilder.cpp" />
+    <ClCompile Include="CSamplerManager.cpp" />
+    <ClCompile Include="CSamplerState.cpp" />
+    <ClCompile Include="CSoundDataBase.cpp" />
+    <ClCompile Include="CTextureManager.cpp" />
+    <ClCompile Include="CWindow.cpp" />
+    <ClCompile Include="CWorld.cpp" />
+    <ClCompile Include="CWorldLight.cpp" />
+    <ClCompile Include="CWorldTime.cpp" />
+    <ClInclude Include="IChunkGenerator.h" />
+    <ClCompile Include="ModelUtil.cpp" />
+    <ClInclude Include="RenderPassTypes.h" />
+    <ClCompile Include="ResourceUtil.cpp" />
+    <ClCompile Include="sparse_set.hpp">
+      <FileType>Document</FileType>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClInclude Include="ShaderTypes.h" />
+    <ClInclude Include="StringUtil.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="util.h" />
+    <ClInclude Include="VertexLayoutTypes.h" />
+    <ClInclude Include="VoxelTypes.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CApplication.cpp" />
+    <ClCompile Include="CBootScene.cpp" />
+    <ClCompile Include="CCamera.cpp" />
+    <ClCompile Include="CComponent.cpp" />
+    <ClCompile Include="CComponentBase.cpp" />
+    <ClCompile Include="CDeltaTimeManager.cpp" />
+    <ClCompile Include="CGameWorld.cpp" />
+    <ClCompile Include="CInputLayer.cpp" />
+    <ClCompile Include="CInputLayerManager.cpp" />
+    <ClCompile Include="CMaterial.cpp" />
+    <ClCompile Include="CMesh.cpp" />
+    <ClCompile Include="CMeshManager.cpp" />
+    <ClCompile Include="CMeshRenderer.cpp" />
+    <ClCompile Include="CObject.cpp" />
+    <ClCompile Include="CObjectManager.cpp" />
+    <ClCompile Include="CPipeline.cpp" />
+    <ClCompile Include="CPipelineManager.cpp" />
+    <ClCompile Include="CRenderFrame.cpp" />
+    <ClCompile Include="CRenderManager.cpp" />
+    <ClCompile Include="CRenderWorld.cpp" />
+    <ClCompile Include="CScene.cpp" />
+    <ClCompile Include="CSceneManager.cpp" />
+    <ClCompile Include="CShader.cpp" />
+    <ClCompile Include="CShaderManager.cpp" />
+    <ClCompile Include="CTestScene.cpp" />
+    <ClCompile Include="CTexture.cpp" />
+    <ClCompile Include="CTransform.cpp" />
+    <ClCompile Include="CDirectX11Adapter.cpp" />
+    <ClCompile Include="DirectX11Com.cpp" />
+    <ClCompile Include="DX11Tutorial.cpp" />
+    <ClCompile Include="ImGui\backend\imgui_impl_dx11.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ImGui\backend\imgui_impl_win32.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_demo.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_draw.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_tables.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_widgets.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CSystem.cpp" />
+    <ClInclude Include="VertexTypes.h" />
+    <ClInclude Include="singleton.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DX11Tutorial.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="DX11Tutorial.ico" />
+    <Image Include="small.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ChunkTemplate.md" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

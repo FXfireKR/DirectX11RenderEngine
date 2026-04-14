@@ -1,0 +1,804 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Code">
+      <UniqueIdentifier>{671af836-b008-49d2-a12b-f4f56bbae1ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\00_WindowFramework">
+      <UniqueIdentifier>{597e796c-8d93-4015-b909-0ac7863d25b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\01_Manager">
+      <UniqueIdentifier>{4768e63e-43fa-4efc-b075-10cace8b11b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\02_Object">
+      <UniqueIdentifier>{94023a36-c0aa-452d-9916-9ebf7b3fd7b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\03_Render">
+      <UniqueIdentifier>{bddb24aa-d8da-45fe-9529-5c96dde4899b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\01_Manager\GameTime">
+      <UniqueIdentifier>{a5106333-123f-445e-ad1c-baa4c4bd90b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\01_Manager\Scene">
+      <UniqueIdentifier>{daa799bc-4c8a-4c68-b32b-82e005c88667}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="__ImGui__">
+      <UniqueIdentifier>{841892f2-0533-41ea-b7c3-cd31f3d8dc54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\01_Manager\Canonicalize">
+      <UniqueIdentifier>{0bde6944-bdc1-4269-972e-2199c5666492}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\03_Render\Texture">
+      <UniqueIdentifier>{c517edfb-8d91-4609-a6a8-bee7ba90f41d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\03_Render\Pipeline">
+      <UniqueIdentifier>{f9c911a9-519b-4037-acc2-3bd22bcd4481}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\_etc">
+      <UniqueIdentifier>{15d92955-df8d-4392-b4d0-390fb8700dbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\04_Game">
+      <UniqueIdentifier>{dbeb80af-3c1b-48e0-afd2-087c13418bf7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\99_Scene">
+      <UniqueIdentifier>{0889b098-3941-4b9e-9814-380c6f62affc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\03_Render\DirectX11">
+      <UniqueIdentifier>{15520119-4891-46b4-bef6-0cbb7bc8a46c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\03_Render\Shader">
+      <UniqueIdentifier>{2af97ac7-0fd6-413c-a1b1-07d2a9a425d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\03_Render\InputLayout">
+      <UniqueIdentifier>{7c91a116-f45c-4909-8280-008e7e9e6e83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\03_Render\Mesh">
+      <UniqueIdentifier>{bec66f85-fbd0-4297-a514-0236306793b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\01_Manager\RawInput">
+      <UniqueIdentifier>{f988f819-c2bf-4dc0-9e9c-7f8ba7193aa7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\01_Manager\RawInput\GamePad">
+      <UniqueIdentifier>{b4cc85c2-15f0-469c-9ebd-128ac29f5c17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\01_Manager\RawInput\__Interface">
+      <UniqueIdentifier>{1be49d01-ea4f-443e-a4a3-c13b5066b76c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\02_Object\Component">
+      <UniqueIdentifier>{a0662ba1-a11b-4ce9-a93a-703e9aaa7286}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\02_Object\Component\_Base">
+      <UniqueIdentifier>{26da3e71-2fb5-4670-94b5-dba1cd6439ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\03_Render\Material">
+      <UniqueIdentifier>{cb1bfa8f-beb8-455b-9683-4db4b88a98fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\04_Game\Chunk">
+      <UniqueIdentifier>{792a405c-2d44-4ae5-95a5-7acf16c8ac46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\04_Game\BlockState/Model">
+      <UniqueIdentifier>{0421a032-ef89-413b-9862-b9696c5d4536}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\04_Game\Atlas">
+      <UniqueIdentifier>{9bdb5191-bd39-40b3-b664-7398db9167d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Util">
+      <UniqueIdentifier>{b0a5d4ee-8caf-493c-a334-09db6ea785f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Util\Core">
+      <UniqueIdentifier>{d1b975d8-3cff-487b-ad97-9656cfb8f785}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Util\Render">
+      <UniqueIdentifier>{82217644-d166-4c0a-972f-4cd76b384a51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Util\World">
+      <UniqueIdentifier>{95bc86a4-6035-4c9a-9831-56334ad53a69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Util\Block">
+      <UniqueIdentifier>{f61ad9f2-1846-4e14-94a7-13160a8eeeaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Util\Minecraft">
+      <UniqueIdentifier>{75760351-1655-4081-80c6-7780c6efa2a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\04_Game\BlockState/Model\Facade">
+      <UniqueIdentifier>{8c5faed9-a7b0-4149-9ee6-127f77f19a9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\04_Game\System">
+      <UniqueIdentifier>{3c1432e7-f61d-48f8-8e66-d9a36bb3692a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\04_Game\Debug">
+      <UniqueIdentifier>{882131ae-9c45-4386-9aa1-c9863c368ea4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\04_Game\Chunk\Generator">
+      <UniqueIdentifier>{b16b333a-b646-4cf1-93c3-aadebea9b841}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DX11Tutorial.h">
+      <Filter>Code\00_WindowFramework</Filter>
+    </ClInclude>
+    <ClInclude Include="CSystem.h">
+      <Filter>Code\00_WindowFramework</Filter>
+    </ClInclude>
+    <ClInclude Include="CObject.h">
+      <Filter>Code\02_Object</Filter>
+    </ClInclude>
+    <ClInclude Include="CRenderFrame.h">
+      <Filter>Code\03_Render</Filter>
+    </ClInclude>
+    <ClInclude Include="CDeltaTimeManager.h">
+      <Filter>Code\01_Manager\GameTime</Filter>
+    </ClInclude>
+    <ClInclude Include="CSceneManager.h">
+      <Filter>Code\01_Manager\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="CTransform.h">
+      <Filter>Code\02_Object\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="CCamera.h">
+      <Filter>Code\02_Object\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="CRenderManager.h">
+      <Filter>Code\03_Render</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\backend\imgui_impl_dx11.h">
+      <Filter>__ImGui__</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\backend\imgui_impl_win32.h">
+      <Filter>__ImGui__</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imconfig.h">
+      <Filter>__ImGui__</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui.h">
+      <Filter>__ImGui__</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_internal.h">
+      <Filter>__ImGui__</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_rectpack.h">
+      <Filter>__ImGui__</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_textedit.h">
+      <Filter>__ImGui__</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_truetype.h">
+      <Filter>__ImGui__</Filter>
+    </ClInclude>
+    <ClInclude Include="CObjectManager.h">
+      <Filter>Code\02_Object</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneHeader.h">
+      <Filter>Code\02_Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Components.h">
+      <Filter>Code\02_Object\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="CScene.h">
+      <Filter>Code\01_Manager\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="CTestScene.h">
+      <Filter>Code\99_Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="CBootScene.h">
+      <Filter>Code\99_Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="CMeshRenderer.h">
+      <Filter>Code\02_Object\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="CTexture.h">
+      <Filter>Code\03_Render\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="CComponentBase.h">
+      <Filter>Code\02_Object\Component\_Base</Filter>
+    </ClInclude>
+    <ClInclude Include="CComponent.h">
+      <Filter>Code\02_Object\Component\_Base</Filter>
+    </ClInclude>
+    <ClInclude Include="CPipeline.h">
+      <Filter>Code\03_Render\Pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="util.h">
+      <Filter>헤더 파일\_etc</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>헤더 파일\_etc</Filter>
+    </ClInclude>
+    <ClInclude Include="singleton.h">
+      <Filter>헤더 파일\_etc</Filter>
+    </ClInclude>
+    <ClInclude Include="CRenderWorld.h">
+      <Filter>Code\03_Render</Filter>
+    </ClInclude>
+    <ClInclude Include="CGameWorld.h">
+      <Filter>Code\04_Game</Filter>
+    </ClInclude>
+    <ClInclude Include="CApplication.h">
+      <Filter>Code\00_WindowFramework</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectX11Com.h">
+      <Filter>Code\03_Render\DirectX11</Filter>
+    </ClInclude>
+    <ClInclude Include="CDirectX11Adapter.h">
+      <Filter>Code\03_Render\DirectX11</Filter>
+    </ClInclude>
+    <ClInclude Include="CShader.h">
+      <Filter>Code\03_Render\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="CShaderManager.h">
+      <Filter>Code\03_Render\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="CInputLayerManager.h">
+      <Filter>Code\03_Render\InputLayout</Filter>
+    </ClInclude>
+    <ClInclude Include="CInputLayer.h">
+      <Filter>Code\03_Render\InputLayout</Filter>
+    </ClInclude>
+    <ClInclude Include="CMesh.h">
+      <Filter>Code\03_Render\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="CMeshManager.h">
+      <Filter>Code\03_Render\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="CPipelineManager.h">
+      <Filter>Code\03_Render\Pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="CKeyboardDevice.h">
+      <Filter>Code\01_Manager\RawInput</Filter>
+    </ClInclude>
+    <ClInclude Include="CMouseDevice.h">
+      <Filter>Code\01_Manager\RawInput</Filter>
+    </ClInclude>
+    <ClInclude Include="CRawInputDispatcher.h">
+      <Filter>Code\01_Manager\RawInput</Filter>
+    </ClInclude>
+    <ClInclude Include="CDualSenseDevice.h">
+      <Filter>Code\01_Manager\RawInput\GamePad</Filter>
+    </ClInclude>
+    <ClInclude Include="CGamePadHub.h">
+      <Filter>Code\01_Manager\RawInput\GamePad</Filter>
+    </ClInclude>
+    <ClInclude Include="IInputDevice.h">
+      <Filter>Code\01_Manager\RawInput\__Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="IGamePadDevice.h">
+      <Filter>Code\01_Manager\RawInput\__Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="CInputManager.h">
+      <Filter>Code\01_Manager\RawInput</Filter>
+    </ClInclude>
+    <ClInclude Include="CMaterial.h">
+      <Filter>Code\03_Render\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="CMaterialManager.h">
+      <Filter>Code\03_Render\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="CTextureManager.h">
+      <Filter>Code\03_Render</Filter>
+    </ClInclude>
+    <ClInclude Include="CSamplerState.h">
+      <Filter>Code\03_Render</Filter>
+    </ClInclude>
+    <ClInclude Include="CSamplerManager.h">
+      <Filter>Code\03_Render</Filter>
+    </ClInclude>
+    <ClInclude Include="CWindow.h">
+      <Filter>Code\00_WindowFramework</Filter>
+    </ClInclude>
+    <ClInclude Include="CChunkComponent.h">
+      <Filter>Code\04_Game\Chunk</Filter>
+    </ClInclude>
+    <ClInclude Include="CChunkMesherSystem.h">
+      <Filter>Code\04_Game\Chunk</Filter>
+    </ClInclude>
+    <ClInclude Include="CInitializeScene.h">
+      <Filter>Code\99_Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="CRuntimeAtlas.h">
+      <Filter>Code\04_Game\Atlas</Filter>
+    </ClInclude>
+    <ClInclude Include="CRapidJsonParseWrapper.h">
+      <Filter>헤더 파일\_etc</Filter>
+    </ClInclude>
+    <ClInclude Include="IFileWrapper.h">
+      <Filter>헤더 파일\_etc</Filter>
+    </ClInclude>
+    <ClInclude Include="CModelDB.h">
+      <Filter>Code\04_Game\BlockState/Model</Filter>
+    </ClInclude>
+    <ClInclude Include="CBlockStateDB.h">
+      <Filter>Code\04_Game\BlockState/Model</Filter>
+    </ClInclude>
+    <ClInclude Include="VoxelTypes.h">
+      <Filter>헤더 파일\Util\Minecraft</Filter>
+    </ClInclude>
+    <ClInclude Include="ChunkTypes.h">
+      <Filter>헤더 파일\Util\World</Filter>
+    </ClInclude>
+    <ClInclude Include="ChunkMath.h">
+      <Filter>헤더 파일\Util\World</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexTypes.h">
+      <Filter>헤더 파일\Util\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockStateTypes.h">
+      <Filter>헤더 파일\Util\Block</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockStateParseUtil.h">
+      <Filter>헤더 파일\Util\Block</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectTypes.h">
+      <Filter>헤더 파일\Util\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="HashUtil.h">
+      <Filter>헤더 파일\Util\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="EncodingUtil.h">
+      <Filter>헤더 파일\Util\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="StringUtil.h">
+      <Filter>헤더 파일\Util\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreTypes.h">
+      <Filter>헤더 파일\Util\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderTypes.h">
+      <Filter>헤더 파일\Util\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexLayoutTypes.h">
+      <Filter>헤더 파일\Util\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderTypes.h">
+      <Filter>헤더 파일\Util\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="ChunkRenderTypes.h">
+      <Filter>헤더 파일\Util\Minecraft</Filter>
+    </ClInclude>
+    <ClInclude Include="MinecraftCore.h">
+      <Filter>헤더 파일\Util\Minecraft</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockRaycastTypes.h">
+      <Filter>헤더 파일\Util\Block</Filter>
+    </ClInclude>
+    <ClInclude Include="IBlockAccessor.hpp">
+      <Filter>헤더 파일\Util\Block</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockRaycastUtil.h">
+      <Filter>헤더 파일\Util\Block</Filter>
+    </ClInclude>
+    <ClInclude Include="CChunkWorld.h">
+      <Filter>Code\04_Game\Chunk</Filter>
+    </ClInclude>
+    <ClInclude Include="CWorld.h">
+      <Filter>Code\04_Game\Chunk</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelTypes.h">
+      <Filter>헤더 파일\Util\Minecraft</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelUtil.h">
+      <Filter>헤더 파일\Util\Minecraft</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceUtil.h">
+      <Filter>헤더 파일\Util\Minecraft</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockDefTypes.h">
+      <Filter>헤더 파일\Util\Block</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockTagTypes.h">
+      <Filter>헤더 파일\Util\Block</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockMiningTypes.h">
+      <Filter>헤더 파일\Util\Block</Filter>
+    </ClInclude>
+    <ClInclude Include="ILoadProgress.h">
+      <Filter>헤더 파일\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="CChunkColumn.h">
+      <Filter>Code\04_Game\Chunk</Filter>
+    </ClInclude>
+    <ClInclude Include="CChunkMeshBuilder.h">
+      <Filter>Code\04_Game\Chunk</Filter>
+    </ClInclude>
+    <ClInclude Include="CChunkSection.h">
+      <Filter>Code\04_Game\Chunk</Filter>
+    </ClInclude>
+    <ClInclude Include="CRuntimeAtlasBuilder.h">
+      <Filter>Code\04_Game\Atlas</Filter>
+    </ClInclude>
+    <ClInclude Include="CBlockDefDB.h">
+      <Filter>Code\04_Game\BlockState/Model</Filter>
+    </ClInclude>
+    <ClInclude Include="CBlockTagDB.h">
+      <Filter>Code\04_Game\BlockState/Model</Filter>
+    </ClInclude>
+    <ClInclude Include="CBlockDB.h">
+      <Filter>Code\04_Game\BlockState/Model\Facade</Filter>
+    </ClInclude>
+    <ClInclude Include="CBlockResourceDB.h">
+      <Filter>Code\04_Game\BlockState/Model\Facade</Filter>
+    </ClInclude>
+    <ClInclude Include="CPlayerController.h">
+      <Filter>Code\02_Object\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="CCharacterMotor.h">
+      <Filter>Code\02_Object\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="CInventoryComponent.h">
+      <Filter>Code\02_Object\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="CBlockInteractor.h">
+      <Filter>Code\02_Object\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="AtlasTypes.h">
+      <Filter>헤더 파일\Util\Minecraft</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioType.h">
+      <Filter>헤더 파일\Util\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="CBlockBreakParticleSystem.h">
+      <Filter>Code\04_Game\System</Filter>
+    </ClInclude>
+    <ClInclude Include="CAudioSystem.h">
+      <Filter>Code\04_Game\System</Filter>
+    </ClInclude>
+    <ClInclude Include="CDebugOverlay.h">
+      <Filter>Code\04_Game\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="CDebugCollector.h">
+      <Filter>Code\04_Game\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugUtil.h">
+      <Filter>Code\04_Game\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugTypes.h">
+      <Filter>Code\04_Game\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderPassTypes.h">
+      <Filter>헤더 파일\Util\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="MathUtil.h">
+      <Filter>헤더 파일\Util\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="CWorldTime.h">
+      <Filter>Code\04_Game\Chunk</Filter>
+    </ClInclude>
+    <ClInclude Include="CWorldLight.h">
+      <Filter>Code\04_Game\Chunk</Filter>
+    </ClInclude>
+    <ClInclude Include="CSoundDataBase.h">
+      <Filter>Code\04_Game\System</Filter>
+    </ClInclude>
+    <ClInclude Include="GameWorldHeader.h">
+      <Filter>헤더 파일\Util\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="CHeightmapChunkGenerator.h">
+      <Filter>Code\04_Game\Chunk\Generator</Filter>
+    </ClInclude>
+    <ClInclude Include="CFlatChunkGenerator.h">
+      <Filter>Code\04_Game\Chunk\Generator</Filter>
+    </ClInclude>
+    <ClInclude Include="IChunkGenerator.h">
+      <Filter>Code\04_Game\Chunk\Generator</Filter>
+    </ClInclude>
+    <ClInclude Include="CGameScene.h">
+      <Filter>Code\99_Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="CFrustumCuller.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CCloudLayerRenderer.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CBgmController.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CBlockCrackRenderer.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DX11Tutorial.cpp">
+      <Filter>Code\00_WindowFramework</Filter>
+    </ClCompile>
+    <ClCompile Include="CSystem.cpp">
+      <Filter>Code\00_WindowFramework</Filter>
+    </ClCompile>
+    <ClCompile Include="CObject.cpp">
+      <Filter>Code\02_Object</Filter>
+    </ClCompile>
+    <ClCompile Include="CRenderFrame.cpp">
+      <Filter>Code\03_Render</Filter>
+    </ClCompile>
+    <ClCompile Include="CDeltaTimeManager.cpp">
+      <Filter>Code\01_Manager\GameTime</Filter>
+    </ClCompile>
+    <ClCompile Include="CSceneManager.cpp">
+      <Filter>Code\01_Manager\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="CTransform.cpp">
+      <Filter>Code\02_Object\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="CCamera.cpp">
+      <Filter>Code\02_Object\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="CRenderManager.cpp">
+      <Filter>Code\03_Render</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\backend\imgui_impl_dx11.cpp">
+      <Filter>__ImGui__</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\backend\imgui_impl_win32.cpp">
+      <Filter>__ImGui__</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui.cpp">
+      <Filter>__ImGui__</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_demo.cpp">
+      <Filter>__ImGui__</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_draw.cpp">
+      <Filter>__ImGui__</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_tables.cpp">
+      <Filter>__ImGui__</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_widgets.cpp">
+      <Filter>__ImGui__</Filter>
+    </ClCompile>
+    <ClCompile Include="CObjectManager.cpp">
+      <Filter>Code\02_Object</Filter>
+    </ClCompile>
+    <ClCompile Include="CScene.cpp">
+      <Filter>Code\01_Manager\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="CTestScene.cpp">
+      <Filter>Code\99_Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="CBootScene.cpp">
+      <Filter>Code\99_Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="CMeshRenderer.cpp">
+      <Filter>Code\02_Object\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="CTexture.cpp">
+      <Filter>Code\03_Render\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="CComponentBase.cpp">
+      <Filter>Code\02_Object\Component\_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="CComponent.cpp">
+      <Filter>Code\02_Object\Component\_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="CPipeline.cpp">
+      <Filter>Code\03_Render\Pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="CRenderWorld.cpp">
+      <Filter>Code\03_Render</Filter>
+    </ClCompile>
+    <ClCompile Include="CGameWorld.cpp">
+      <Filter>Code\04_Game</Filter>
+    </ClCompile>
+    <ClCompile Include="CApplication.cpp">
+      <Filter>Code\00_WindowFramework</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectX11Com.cpp">
+      <Filter>Code\03_Render\DirectX11</Filter>
+    </ClCompile>
+    <ClCompile Include="CDirectX11Adapter.cpp">
+      <Filter>Code\03_Render\DirectX11</Filter>
+    </ClCompile>
+    <ClCompile Include="CShader.cpp">
+      <Filter>Code\03_Render\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="CShaderManager.cpp">
+      <Filter>Code\03_Render\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="CInputLayerManager.cpp">
+      <Filter>Code\03_Render\InputLayout</Filter>
+    </ClCompile>
+    <ClCompile Include="CInputLayer.cpp">
+      <Filter>Code\03_Render\InputLayout</Filter>
+    </ClCompile>
+    <ClCompile Include="CMesh.cpp">
+      <Filter>Code\03_Render\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="CMeshManager.cpp">
+      <Filter>Code\03_Render\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="CPipelineManager.cpp">
+      <Filter>Code\03_Render\Pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="CKeyboardDevice.cpp">
+      <Filter>Code\01_Manager\RawInput</Filter>
+    </ClCompile>
+    <ClCompile Include="CRawInputDispatcher.cpp">
+      <Filter>Code\01_Manager\RawInput</Filter>
+    </ClCompile>
+    <ClCompile Include="CMouseDevice.cpp">
+      <Filter>Code\01_Manager\RawInput</Filter>
+    </ClCompile>
+    <ClCompile Include="CDualSenseDevice.cpp">
+      <Filter>Code\01_Manager\RawInput\GamePad</Filter>
+    </ClCompile>
+    <ClCompile Include="CGamePadHub.cpp">
+      <Filter>Code\01_Manager\RawInput\GamePad</Filter>
+    </ClCompile>
+    <ClCompile Include="CInputManager.cpp">
+      <Filter>Code\01_Manager\RawInput</Filter>
+    </ClCompile>
+    <ClCompile Include="CMaterial.cpp">
+      <Filter>Code\03_Render\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="CMaterialManager.cpp">
+      <Filter>Code\03_Render\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="CTextureManager.cpp">
+      <Filter>Code\03_Render</Filter>
+    </ClCompile>
+    <ClCompile Include="CSamplerState.cpp">
+      <Filter>Code\03_Render</Filter>
+    </ClCompile>
+    <ClCompile Include="CSamplerManager.cpp">
+      <Filter>Code\03_Render</Filter>
+    </ClCompile>
+    <ClCompile Include="CWindow.cpp">
+      <Filter>Code\00_WindowFramework</Filter>
+    </ClCompile>
+    <ClCompile Include="CChunkComponent.cpp">
+      <Filter>Code\04_Game\Chunk</Filter>
+    </ClCompile>
+    <ClCompile Include="CChunkMesherSystem.cpp">
+      <Filter>Code\04_Game\Chunk</Filter>
+    </ClCompile>
+    <ClCompile Include="CInitializeScene.cpp">
+      <Filter>Code\99_Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="CModelDB.cpp">
+      <Filter>Code\04_Game\BlockState/Model</Filter>
+    </ClCompile>
+    <ClCompile Include="CBlockStateDB.cpp">
+      <Filter>Code\04_Game\BlockState/Model</Filter>
+    </ClCompile>
+    <ClCompile Include="CRuntimeAtlas.cpp">
+      <Filter>Code\04_Game\Atlas</Filter>
+    </ClCompile>
+    <ClCompile Include="BlockStateTypes.cpp">
+      <Filter>헤더 파일\Util\Block</Filter>
+    </ClCompile>
+    <ClCompile Include="CChunkWorld.cpp">
+      <Filter>Code\04_Game\Chunk</Filter>
+    </ClCompile>
+    <ClCompile Include="CWorld.cpp">
+      <Filter>Code\04_Game\Chunk</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelUtil.cpp">
+      <Filter>헤더 파일\Util\Minecraft</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceUtil.cpp">
+      <Filter>헤더 파일\Util\Minecraft</Filter>
+    </ClCompile>
+    <ClCompile Include="CChunkSection.cpp">
+      <Filter>Code\04_Game\Chunk</Filter>
+    </ClCompile>
+    <ClCompile Include="CChunkMeshBuilder.cpp">
+      <Filter>Code\04_Game\Chunk</Filter>
+    </ClCompile>
+    <ClCompile Include="CChunkColumn.cpp">
+      <Filter>Code\04_Game\Chunk</Filter>
+    </ClCompile>
+    <ClCompile Include="CRuntimeAtlasBuilder.cpp">
+      <Filter>Code\04_Game\Atlas</Filter>
+    </ClCompile>
+    <ClCompile Include="CBlockTagDB.cpp">
+      <Filter>Code\04_Game\BlockState/Model</Filter>
+    </ClCompile>
+    <ClCompile Include="CBlockDefDB.cpp">
+      <Filter>Code\04_Game\BlockState/Model</Filter>
+    </ClCompile>
+    <ClCompile Include="CBlockDB.cpp">
+      <Filter>Code\04_Game\BlockState/Model\Facade</Filter>
+    </ClCompile>
+    <ClCompile Include="CBlockResourceDB.cpp">
+      <Filter>Code\04_Game\BlockState/Model\Facade</Filter>
+    </ClCompile>
+    <ClCompile Include="CPlayerController.cpp">
+      <Filter>Code\02_Object\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="CCharacterMotor.cpp">
+      <Filter>Code\02_Object\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="CBlockInteractor.cpp">
+      <Filter>Code\02_Object\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="CInventoryComponent.cpp">
+      <Filter>Code\02_Object\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="CBlockBreakParticleSystem.cpp">
+      <Filter>Code\04_Game\System</Filter>
+    </ClCompile>
+    <ClCompile Include="CAudioSystem.cpp">
+      <Filter>Code\04_Game\System</Filter>
+    </ClCompile>
+    <ClCompile Include="CDebugOverlay.cpp">
+      <Filter>Code\04_Game\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="CDebugCollector.cpp">
+      <Filter>Code\04_Game\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="sparse_set.hpp">
+      <Filter>헤더 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CWorldLight.cpp">
+      <Filter>Code\04_Game\Chunk</Filter>
+    </ClCompile>
+    <ClCompile Include="CWorldTime.cpp">
+      <Filter>Code\04_Game\Chunk</Filter>
+    </ClCompile>
+    <ClCompile Include="CSoundDataBase.cpp">
+      <Filter>Code\04_Game\System</Filter>
+    </ClCompile>
+    <ClCompile Include="CFlatChunkGenerator.cpp">
+      <Filter>Code\04_Game\Chunk\Generator</Filter>
+    </ClCompile>
+    <ClCompile Include="CHeightmapChunkGenerator.cpp">
+      <Filter>Code\04_Game\Chunk\Generator</Filter>
+    </ClCompile>
+    <ClCompile Include="CGameScene.cpp">
+      <Filter>Code\99_Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="CFrustumCuller.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CCloudLayerRenderer.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CBgmController.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CBlockCrackRenderer.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DX11Tutorial.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="DX11Tutorial.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ChunkTemplate.md">
+      <Filter>Code\04_Game\Chunk</Filter>
+    </None>
+  </ItemGroup>
+</Project>
